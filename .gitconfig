@@ -1,0 +1,11 @@
+[safe]
+	directory = /run/media/suso/SHARE/Programacion/UM23
+	directory = /mnt/28E6B6B84223B993/Programacion/UM23
+	directory = /mnt/SHARE/Programacion/UM23
+	directory = /mnt/SHARE/Programacion/UM23
+	directory = /mnt/Cositas/Documentos/SSI/ssi
+[user]
+	email = ferreirarodriguezjesus@gmail.com
+	name = Suso
+[alias]
+	adog = log --all --decorate --oneline --graph
