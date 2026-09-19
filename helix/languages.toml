@@ -1,0 +1,37 @@
+[[language]]
+name = "c-sharp"
+scope = "source.csharp"
+injection-regex = "c-?sharp"
+file-types = ["cs", "csx", "cake"]
+roots = ["sln", "csproj"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 4, unit = "\t" }
+language-servers = [ "omnisharp" ]
+
+[language-server.omnisharp]
+command = "omnisharp"
+args = ["--languageserver"]
+
+[[language]]
+language-servers = ["pylsp"]
+name = "python"
+
+# [language-server.dockerized_pylsp]
+# command="/mnt/SHARE/Programacion/autonomous_system/x"
+# args=["lsp"]
+
+[[language]]
+language-servers = ["jdtls"]
+name = "java"
+indent = {tab-width = 4, unit = "    "}
+
+[language-server.jdtls]
+command="jdtls"
+args=["-data","/tmp/si_proyecto"]
+
+
+[language-server.tinymist]
+command = "tinymist"
+config.preview.background.enabled = true
+config.preview.background.args = ["--data-plane-host=127.0.0.1:0", "--invert-colors=never", "--open"]

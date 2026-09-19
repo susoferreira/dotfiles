@@ -1,0 +1,26 @@
+[editor]
+line-number = "relative"
+rulers = [100]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+
+[keys.normal]
+R = "replace_selections_with_clipboard"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["version-control", "spacer", "diagnostics", "selections", "register", "position", "file-encoding"]
+
+
+[keys.normal.space]
+"u" = "switch_to_lowercase"
+"U" = "switch_to_uppercase"
+
+[keys.select.space]
+"u" = "switch_to_lowercase"
+"U" = "switch_to_uppercase"
+
